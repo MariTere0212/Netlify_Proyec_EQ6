@@ -2,7 +2,7 @@
 title: "Módulo 8. Visualización de Resultados"
 author: "Equipo 6"
 date: "2025-11-22"
-categories: ["R"]
+categories: ["Resumen"]
 
 ---
 
