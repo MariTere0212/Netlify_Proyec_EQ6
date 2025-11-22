@@ -8,12 +8,118 @@ categories: ["Resumen"]
 
 
 
-<div id="introducción" class="section level1">
-<h1>Introducción</h1>
+<div id="introducción." class="section level1">
+<h1>Introducción.</h1>
+<p>Los accidentes de tránsito en México constituyen un grave problema de seguridad pública, con más de <strong>10 millones de casos</strong> registrados entre <strong>1997 y 2024</strong>. Su impacto social y económico exige comprender sus causas y condiciones.</p>
+<p>Con datos del <code>INEGI</code> se realizó un análisis estadístico y exploratorio, apoyado en modelos de regresión logística y visualizaciones interactivas, para identificar patrones y factores de riesgo. El propósito es generar evidencia que oriente políticas públicas, estrategias de prevención y acciones de seguridad vial más efectivas.</p>
 </div>
-<div id="objetivo" class="section level1">
-<h1>Objetivo</h1>
+<div id="objetivo." class="section level1">
+<h1>Objetivo.</h1>
+<p><em>Explorar los datos abiertos de accidentes viales, visualizar sus tendencias y realizar un análisis descriptivo que permita comprender mejor dónde, cuándo y cómo ocurren los accidentes.</em></p>
 </div>
-<div id="conclusiones" class="section level1">
-<h1>Conclusiones</h1>
+<div id="conclusiones." class="section level1">
+<h1>Conclusiones.</h1>
+<p>Los accidentes de tránsito en México constituyen un fenómeno complejo en el que confluyen factores humanos, vehiculares, ambientales y temporales. El <strong>análisis descriptivo</strong> y el <strong>modelo de regresión logística</strong> muestran que la fatalidad está fuertemente asociada con la vulnerabilidad del usuario, la gravedad del impacto, conductas de riesgo y condiciones desfavorables del entorno.</p>
+<p>Los hallazgos obtenidos permiten identificar grupos prioritarios de intervención, así como orientar acciones de política pública que reduzcan tanto la frecuencia de los accidentes como su severidad.</p>
+<p>En conjunto, este proyecto proporciona una base sólida para diseñar estrategias basadas en datos que promuevan una movilidad más segura para todos los mexicanos.</p>
+<div id="hallazgos-importantes-dashboard." class="section level2">
+<h2>Hallazgos Importantes (Dashboard).</h2>
+<div id="tendencias-temporales-año-mes-y-hora." class="section level3">
+<h3>Tendencias temporales (Año, mes y hora).</h3>
+<ul>
+<li><p>Los accidentes aumentaron de manera sostenida entre 1997 y 2008, alcanzando un máximo histórico en <code>2004–2008</code>.</p></li>
+<li><p>Desde 2009 hay una reducción gradual y relativa estabilización.</p></li>
+<li><p>2020 muestra una caída atípica, explicada por la pandemia y la baja movilidad.</p></li>
+<li><p>Las horas con <code>mayor número de accidentes se concentran entre 08:00 y 14:00</code>, coincidiendo con hora pico laboral y escolar.</p></li>
+<li><p>La madrugada presenta menos accidentes, pero una proporción importante de siniestros graves vinculados a fatiga, alcohol o exceso de velocidad.</p></li>
+</ul>
+</div>
+<div id="distribución-geográfica." class="section level3">
+<h3>Distribución geográfica.</h3>
+<ul>
+<li><p>Los estados con mayor siniestralidad son: <code>Nuevo León, Jalisco, Chihuahua, Guanajuato y Baja California</code>, todos clasificados como riesgo alto.</p></li>
+<li><p>El sur del país concentra el menor número de accidentes: <code>Chiapas, Oaxaca, Guerrero</code>.</p></li>
+<li><p>Las diferencias se explican por: <code>densidad vehicular, actividad económica, movilidad urbana e infraestructura vial</code>.</p></li>
+<li><p>CDMX presenta riesgo medio, posiblemente por mayor regulación y control.</p></li>
+</ul>
+</div>
+<div id="tipos-de-accidente." class="section level3">
+<h3>Tipos de accidente.</h3>
+<ul>
+<li><p>El 70% de los accidentes corresponde a colisión entre vehículos.</p></li>
+<li><p>Otros tipos relevantes: <code>colisión con objeto fijo, motocicleta, atropellamientos.</code></p></li>
+<li><p>Los atropellamientos y choques con motociclistas, aunque menos frecuentes, presentan mayor gravedad.</p></li>
+</ul>
+</div>
+<div id="perfil-del-conductor-género-y-edad." class="section level3">
+<h3>Perfil del conductor (género y edad).</h3>
+<ul>
+<li><p>Los hombres participan en el 86.8% de los accidentes y presentan: <code>mayor tasa de mortalidad, mayor tasa de lesión.</code></p></li>
+<li><p>El grupo 18–29 años concentra el 42% de los accidentes, asociado a: <code>inexperiencia, conducción imprudente, velocidad, etc.</code></p></li>
+<li><p>Aunque los adultos mayores (60+) participan menos, son el grupo con mayor riesgo de morir.</p></li>
+</ul>
+</div>
+<div id="causas-probables" class="section level3">
+<h3>Causas probables</h3>
+<ul>
+<li><p>Errores o imprudencias del conductor</p></li>
+<li><p>Aliento alcohólico</p></li>
+<li><p>Sin cinturón de seguridad</p></li>
+</ul>
+</div>
+</div>
+<div id="resultados-del-modelo-de-regresión-logística." class="section level2">
+<h2>Resultados del Modelo de Regresión Logística.</h2>
+<div id="variables-con-mayor-riesgo." class="section level3">
+<h3>Variables con mayor riesgo.</h3>
+<p><strong>Tipo de vehículo (riesgo más determinante)</strong></p>
+<p>Los vehículos con mayor probabilidad de fatalidad:</p>
+<ol style="list-style-type: decimal">
+<li><p>Ferrocarril, el escenario más letal.</p></li>
+<li><p>Tranvía, alto riesgo.</p></li>
+<li><p>Bicicleta, usuarios altamente vulnerables.</p></li>
+<li><p>Motocicleta / Vehículo de carga / Camión, impacto o vulnerabilidad.</p></li>
+<li><p>Automóvil, el de menor probabilidad de muerte.</p></li>
+</ol>
+<p><strong>Tipo de accidente.</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Colisión con ferrocarril</p></li>
+<li><p>Volcaduras</p></li>
+<li><p>Atropellamientos</p></li>
+<li><p>Salida del camino</p></li>
+<li><p>Colisión con ciclistas</p></li>
+</ol>
+<p>Los choques entre vehículos automotores son los de menor probabilidad de fatalidad.</p>
+<p><strong>Condiciones del conductor.</strong></p>
+<ul>
+<li><p>Alcohol aumenta fuertemente la probabilidad de fatalidad.</p></li>
+<li><p>No usar cinturón incrementa sustancialmente el riesgo de muerte.</p></li>
+</ul>
+<p><strong>Condiciones del entorno.</strong></p>
+<ul>
+<li><p>Zonas no urbanas tienen mayor probabilidad de fatalidad (más velocidad).</p></li>
+<li><p>Superficie sin pavimentar aumenta el riesgo.</p></li>
+<li><p>Accidentes en intersecciones reducen la probabilidad (velocidad más baja).</p></li>
+</ul>
+</div>
+<div id="implicaciones-y-recomendaciones" class="section level3">
+<h3>Implicaciones y Recomendaciones</h3>
+<p><strong>Infraestructura.</strong></p>
+<ul>
+<li><p>Mejorar pavimentación y señalización en zonas rurales.</p></li>
+<li><p>Intervenir cruces ferroviarios y puntos de alto riesgo.</p></li>
+<li><p>Fortalecer infraestructura para usuarios vulnerables: ciclistas, motociclistas y peatones.</p></li>
+</ul>
+<p><strong>Regulación.</strong></p>
+<ul>
+<li><p>Incrementar control de velocidad en horas nocturnas.</p></li>
+<li><p>Supervisar a vehículos de carga y motocicletas.</p></li>
+<li><p>Fortalecer la aplicación de alcoholímetros.</p></li>
+<li><p>Campañas dirigidas a jóvenes conductores.</p></li>
+<li><p>Promoción del uso del cinturón de seguridad.</p></li>
+<li><p>Programas de movilidad segura para peatones y ciclistas.</p></li>
+<li><p>Estrategias diferenciadas por región y nivel de riesgo.</p></li>
+</ul>
+</div>
+</div>
 </div>

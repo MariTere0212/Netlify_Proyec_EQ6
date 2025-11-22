@@ -10,10 +10,161 @@ categories: ["Resumen"]
 knitr::opts_chunk$set(collapse = TRUE)
 ```
 
-# Introducción
+
+# Introducción.
+
+Los accidentes de tránsito en México constituyen un grave problema de seguridad pública, con más de **10 millones de casos** registrados entre **1997 y 2024**. Su impacto social y económico exige comprender sus causas y condiciones. 
+
+Con datos del `INEGI` se realizó un análisis estadístico y exploratorio, apoyado en modelos de regresión logística y visualizaciones interactivas, para identificar patrones y factores de riesgo. El propósito es generar evidencia que oriente políticas públicas, estrategias de prevención y acciones de seguridad vial más efectivas.
 
 
-# Objetivo
+# Objetivo.
+
+*Explorar los datos abiertos de accidentes viales, visualizar sus tendencias y realizar un análisis descriptivo que permita comprender mejor dónde, cuándo y cómo ocurren los accidentes.*
 
 
-# Conclusiones
+# Conclusiones.
+
+Los accidentes de tránsito en México constituyen un fenómeno complejo en el que confluyen factores humanos, vehiculares, ambientales y temporales. El **análisis descriptivo** y el **modelo de regresión logística** muestran que la fatalidad está fuertemente asociada con la vulnerabilidad del usuario, la gravedad del impacto, conductas de riesgo y condiciones desfavorables del entorno.
+
+Los hallazgos obtenidos permiten identificar grupos prioritarios de intervención, así como orientar acciones de política pública que reduzcan tanto la frecuencia de los accidentes como su severidad.
+
+En conjunto, este proyecto proporciona una base sólida para diseñar estrategias basadas en datos que promuevan una movilidad más segura para todos los mexicanos.
+
+
+## Hallazgos Importantes (Dashboard).
+
+### Tendencias temporales (Año, mes y hora).
+
+- Los accidentes aumentaron de manera sostenida entre 1997 y 2008, alcanzando un máximo histórico en `2004–2008`.
+
+- Desde 2009 hay una reducción gradual y relativa estabilización.
+
+-	2020 muestra una caída atípica, explicada por la pandemia y la baja movilidad.
+
+- Las horas con `mayor número de accidentes se concentran entre 08:00 y 14:00`, coincidiendo con hora pico laboral y escolar.
+
+- La madrugada presenta menos accidentes, pero una proporción importante de siniestros graves vinculados a fatiga, alcohol o exceso de velocidad.
+
+
+### Distribución geográfica.
+
+- Los estados con mayor siniestralidad son: `Nuevo León, Jalisco, Chihuahua, Guanajuato y Baja California`, todos clasificados como riesgo alto.
+
+- El sur del país concentra el menor número de accidentes: `Chiapas, Oaxaca, Guerrero`.
+
+- Las diferencias se explican por: `densidad vehicular, actividad económica, movilidad urbana e infraestructura vial`.
+
+-	CDMX presenta riesgo medio, posiblemente por mayor regulación y control.
+
+
+### Tipos de accidente.
+
+- El 70% de los accidentes corresponde a colisión entre vehículos.
+
+- Otros tipos relevantes: `colisión con objeto fijo, motocicleta, atropellamientos.`
+
+- Los atropellamientos y choques con motociclistas, aunque menos frecuentes, presentan mayor gravedad.
+
+
+
+### Perfil del conductor (género y edad).
+
+-	Los hombres participan en el 86.8% de los accidentes y presentan:	`mayor tasa de mortalidad, mayor tasa de lesión.`
+
+-	El grupo 18–29 años concentra el 42% de los accidentes, asociado a:	`inexperiencia, conducción imprudente, velocidad, etc.`
+
+-	Aunque los adultos mayores (60+) participan menos, son el grupo con mayor riesgo de morir.
+
+
+### Causas probables
+
+- Errores o imprudencias del conductor
+
+- Aliento alcohólico
+
+- Sin cinturón de seguridad
+
+
+
+## Resultados del Modelo de Regresión Logística.
+
+
+### Variables con mayor riesgo.
+
+**Tipo de vehículo (riesgo más determinante)**
+
+
+Los vehículos con mayor probabilidad de fatalidad:
+
+  1.	Ferrocarril, el escenario más letal.
+  
+  2.	Tranvía, alto riesgo.
+  
+  3.	Bicicleta, usuarios altamente vulnerables.
+  
+  4.	Motocicleta / Vehículo de carga / Camión, impacto o vulnerabilidad.
+  
+  5.  Automóvil, el de menor probabilidad de muerte.
+  
+
+
+**Tipo de accidente.**
+
+  1.	Colisión con ferrocarril
+  
+  2.	Volcaduras
+  
+  3.	Atropellamientos
+  
+  4.	Salida del camino
+  
+  5.	Colisión con ciclistas
+
+Los choques entre vehículos automotores son los de menor probabilidad de fatalidad.
+
+
+**Condiciones del conductor.**
+
+  - Alcohol aumenta fuertemente la probabilidad de fatalidad.
+  
+  -	No usar cinturón incrementa sustancialmente el riesgo de muerte.
+  
+
+**Condiciones del entorno.**
+
+-	Zonas no urbanas tienen mayor probabilidad de fatalidad (más velocidad).
+
+-	Superficie sin pavimentar aumenta el riesgo.
+
+-	Accidentes en intersecciones reducen la probabilidad (velocidad más baja).
+
+
+### Implicaciones y Recomendaciones
+
+**Infraestructura.**
+
+-	Mejorar pavimentación y señalización en zonas rurales.
+
+-	Intervenir cruces ferroviarios y puntos de alto riesgo.
+
+-	Fortalecer infraestructura para usuarios vulnerables: ciclistas, motociclistas y peatones.
+
+
+**Regulación.**
+
+- Incrementar control de velocidad en horas nocturnas.
+
+- Supervisar a vehículos de carga y motocicletas.
+
+- Fortalecer la aplicación de alcoholímetros.
+
+-	Campañas dirigidas a jóvenes conductores.
+
+-	Promoción del uso del cinturón de seguridad.
+
+- Programas de movilidad segura para peatones y ciclistas.
+
+-	Estrategias diferenciadas por región y nivel de riesgo.
+
+
