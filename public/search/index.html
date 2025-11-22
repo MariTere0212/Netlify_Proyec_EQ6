@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-    <meta property="og:site_name" content="Huabing Blog">
+    <meta property="og:site_name" content="Accidentes de tránsito y mortalidad.">
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="https://zhaohuabing.com//img/home-bg-jeep.jpg">
-    <meta property="twitter:image" content="https://zhaohuabing.com//img/home-bg-jeep.jpg" />
+    <meta property="og:image" content="https://acc-transito-eq6-mod8.netlify.app//img/header_accidentes.jpg">
+    <meta property="twitter:image" content="https://acc-transito-eq6-mod8.netlify.app//img/header_accidentes.jpg" />
     
 
     
@@ -21,22 +21,22 @@
     
 
     
-    <meta name="description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。">
-    <meta property="og:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
-    <meta property="twitter:description" content="赵化冰，程序员, 开源爱好者，生活探险家 | 这里是 赵化冰 的博客，与你一起发现更大的世界。" />
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    <meta property="twitter:description" content="" />
     
 
-    <meta property="og:url" content="https://zhaohuabing.com/search/" />
+    <meta property="og:url" content="https://acc-transito-eq6-mod8.netlify.app/search/" />
 
     
     <meta property="twitter:card" content="summary" />
     
     
 
-    <meta name="keyword"  content="赵化冰, zhaohuabing, Zhaohuabing, , 赵化冰的网络日志, 赵化冰的博客, Zhaohuabing Blog, 博客, 个人网站, 互联网, Web, 云原生, PaaS, Istio, Kubernetes, 微服务, Microservice">
+    <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Searches | 赵化冰的博客 | Zhaohuabing Blog</title>
+    <title>Searches | EQUIPO 6</title>
 
     <link rel="canonical" href="/search/">
 
@@ -91,7 +91,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Huabing Blog</a>
+            <a class="navbar-brand" href="/">Accidentes de tránsito y mortalidad.</a>
         </div>
 
         
@@ -105,29 +105,17 @@
                     
                         
                         <li>
-                            <a href="/categories/life/">life</a>
-                        </li>
-                        
-                        <li>
                             <a href="/categories/r/">r</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/categories/tech/">tech</a>
-                        </li>
-                        
-                        <li>
-                            <a href="/categories/tips/">tips</a>
                         </li>
                         
                     
                     
 		    
-                        <li><a href="/archive//">ARCHIVE</a></li>
+                        <li><a href="/dashboard//">DASHBOARD</a></li>
                     
-                        <li><a href="/notes//">NOTES</a></li>
+                        <li><a href="https://github.com/MariTere0212/MOD_8_Equipo_6-Accidentes-de-transito-y-mortalidad/">GitHub Datos de Dashboard</a></li>
                     
-                        <li><a href="/about//">ABOUT</a></li>
+                        <li><a href="https://github.com/MariTere0212/Netlify_Proyec_EQ6/">GitHub Netlify</a></li>
                     
 		            <li>
                         <a href="/search"><i class="fa fa-search"></i></a>
@@ -170,14 +158,14 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+<header class="intro-header" style="background-image: url('/img/header_accidentes.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>Huabing Blog </h1>
+                    <h1>Accidentes de tránsito y mortalidad. </h1>
                     
-		    <span class="subheading">路在脚下，心向远方</span>
+		    <span class="subheading"></span>
                 </div>
             </div>
         </div>
@@ -198,115 +186,14 @@
             post-container
         ">
         
-            
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment.min.js"></script>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0/dist/instantsearch-theme-algolia.min.css">
-
-<div id="search-searchbar"></div>
- <div class="post-list" id="search-hits">
- </div>
-
+            <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+<div id="search"></div>
 <script>
-const search = instantsearch({
-  appId: '',
-  indexName: '',
-  apiKey: ''
-});
-
-const hitTemplate = function(hit) {
-
-
-  let date = '';
-  if (hit.date) {
-    date = moment.unix(hit.date).format('MMM D, YYYY');
-  }
-  let url = `${hit.url}#${hit.anchor}`;
-  const title = hit._highlightResult.title.value;
-
-  let breadcrumbs = '';
-  if (hit._highlightResult.headings) {
-    breadcrumbs = hit._highlightResult.headings.map(match => {
-      return `<span class="post-breadcrumb">${match.value}</span>`
-    }).join(' > ')
-  }
-
-  let content = "" ; 
-  if (hit._highlightResult.content){
-      content = hit._highlightResult.content.value;
-  }
-  else{
-      content = hit.summary;
-  }
-
-
-  return `
-    <div class="post-item">
-      <span class="post-meta">${date}</span>
-      <h2><a class="post-link" href="${url}">${title}</a></h2>
-      <a href="${url}" class="post-breadcrumbs">${breadcrumbs}</a>
-      <div class="post-snippet">${content}</div>
-    </div>
-  `;
-}
-
-
-search.addWidget(
-  instantsearch.widgets.searchBox({
-    container: '#search-searchbar',
-    placeholder: 'Search into posts...',
-    poweredBy: true 
-  })
-);
-
-search.addWidget(
-  instantsearch.widgets.hits({
-    container: '#search-hits',
-    templates: {
-      item: hitTemplate
-    }
-  })
-);
-
-search.start();
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({ element: "#search" });
+    });
 </script>
-
-<style>
-.ais-search-box {
-  max-width: 100%;
-  margin-bottom: 15px;
-}
-.post-item {
-  margin-bottom: 30px;
-}
-.post-link .ais-Highlight {
-  color: #111;
-  font-style: normal;
-  text-decoration: underline;
-}
-.post-breadcrumbs {
-  color: #424242;
-  display: block;
-}
-.post-breadcrumb {
-  font-size: 18px;
-  color: #424242;
-}
-.post-breadcrumb .ais-Highlight {
-  font-weight: bold;
-  font-style: normal;
-}
-.post-snippet .ais-Highlight {
-  color: #2a7ae2;
-  font-style: normal;
-  font-weight: bold;
-}
-.post-snippet img {
-  display: none;
-}
-</style>
-
         
        	</div>
         
@@ -320,199 +207,14 @@ search.start();
 ">
     
 	
-    <section class="visible-md visible-lg">
-	
-        <div class="short-about">
-            
-            <a href="/about">
-               <img src="/img/zhaohuabing.png" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Software Developer, Open Source Enthusiast and Life Adventurer</p>
-            
-           
-           <ul class="list-inline">
-               
-               <li>
-                   <a href="mailto:youremail@gmail.com">
-                      <span class="fa-stack fa-lg">
-                          <i class="fa fa-circle fa-stack-2x"></i>
-                          <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                      </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/yourgithub">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-            
-            
-            
-               
-               
-               
-               
-                </ul>
-            </div>
-    </section>
-	
     
     
     
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-            
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/docker" title="docker">
-                        docker
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/istio" title="istio">
-                        istio
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/kubernetes" title="kubernetes">
-                        kubernetes
-                    </a>
-               
-            
-               
-            
-               
-                    <a href="/tags/microservice" title="microservice">
-                        microservice
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/security" title="security">
-                        security
-                    </a>
-               
-            
-               
-                    <a href="/tags/service-mesh" title="service mesh">
-                        service mesh
-                    </a>
-               
-            
-               
-                    <a href="/tags/tips" title="tips">
-                        tips
-                    </a>
-               
-            
-               
-            
-               
-            
-               
-            
-        </div>
-    </section>
     
 
     
     
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FRIENDS</h5>
-        <ul class="list-inline">
-            
-            <li><a target="_blank" href="https://zhaozhihan.com">Linda的博客</a></li>
-            
-        </ul>
-    </section>
     
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>LAST POSTS</h5>
-        <ul>
-        
-            <li><a href="/2025/07/06/mathematical-formulae/">Authoring mathematical formulae</a></li>
-        
-            <li><a href="/post/2020-12-01-r-rmarkdown/">Hello R Markdown</a></li>
-        
-            <li><a href="/post/readme/">Clean White Theme for Hugo</a></li>
-        
-            <li><a href="/2018/06/04/introducing-the-istio-v1alpha3-routing-api/">Istio v1aplha3 routing API介绍(译文）</a></li>
-        
-            <li><a href="/2018/06/02/istio08/">Istio 0.8 Release发布</a></li>
-        
-        </ul>
-    </section>
     
 </div>
 
@@ -527,15 +229,6 @@ search.start();
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     
-                    <li>
-                        <a href="mailto:youremail@gmail.com">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
                     
                     
@@ -543,18 +236,9 @@ search.start();
 
 		            
                     
-                    <li>
-                        <a target="_blank" href="/your%20wechat%20qr%20code%20image">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-weixin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		            
                     
                     <li>
-                        <a target="_blank" href="https://github.com/yourgithub">
+                        <a target="_blank" href="https://github.com/MariTere0212/MOD_8_Equipo_6-Accidentes-de-transito-y-mortalidad">
                             <span class="fa-stack fa-lg">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-github fa-stack-1x fa-inverse"></i>
@@ -565,25 +249,7 @@ search.start();
                     
                     
                     
-                    <li>
-                        <a target="_blank" href="https://www.linkedin.com/in/yourlinkedinid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-		           
                     
-                    
-                    <li>
-                        <a target="_blank" href="https://stackoverflow.com/users/yourstackoverflowid">
-                            <span class="fa-stack fa-lg">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-stack-overflow fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
                     
                     
                     
@@ -593,26 +259,9 @@ search.start();
             
             
            
-                   <li>
-                       <a href='/search/index.xml' rel="alternate" type="application/rss+xml" title="Huabing Blog" >
-                           <span class="fa-stack fa-lg">
-                               <i class="fas fa-circle fa-stack-2x"></i>
-                               <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-                           </span>
-                       </a>
-                   </li>
-            
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; Huabing Blog 2025
-                    
-                    <br>
-                    <a href="https://themes.gohugo.io/hugo-theme-cleanwhite">CleanWhite Hugo Theme</a> by <a href="https://zhaohuabing.com">Huabing</a> |
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=zhaohuabing&repo=hugo-theme-cleanwhite&type=star&count=true" >
-                    </iframe>
+                    Copyright &copy; Accidentes de tránsito y mortalidad. 2025
                     
                 </p>
             </div>
