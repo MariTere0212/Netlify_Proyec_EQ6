@@ -17,7 +17,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 Los accidentes de tránsito en México constituyen un grave problema de seguridad pública, con más de **10 millones de casos** registrados entre **1997 y 2024**. Su impacto social y económico exige comprender sus causas y condiciones. 
 
-Con datos del [Ir INEGI](https://www.inegi.org.mx/programas/accidentes/#datos_abiertos) se realizó un análisis estadístico y exploratorio, apoyado en modelos de regresión logística y visualizaciones interactivas, para identificar patrones y factores de riesgo. El propósito es generar evidencia que oriente políticas públicas, estrategias de prevención y acciones de seguridad vial más efectivas.
+Con datos del [INEGI](https://www.inegi.org.mx/programas/accidentes/#datos_abiertos) se realizó un análisis estadístico y exploratorio, apoyado en modelos de regresión logística y visualizaciones interactivas, para identificar patrones y factores de riesgo. El propósito es generar evidencia que oriente políticas públicas, estrategias de prevención y acciones de seguridad vial más efectivas.
 
 De acuerdo con el modelo de regresión estadística que se implementó, el modelo no es tan pesado computacionalmente, a diferencia de modelos como redes neuronales, arboles de decisión, xgboost,  por lo que, se decide hacer sólo limpieza de datos, quitando duplicados.
 
