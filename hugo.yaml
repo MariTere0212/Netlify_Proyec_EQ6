@@ -25,7 +25,7 @@ params:
   show_reading_time: false
   
   additional_menus:
-    - href: https://acc-transito-eq6-mod8.netlify.app/dashboard/
+    - href: https://zcmnqg-mar0a0teresa-mart0nez0huitr0n.shinyapps.io/Mod8_EQ6_Proyecto/
       title: DASHBOARD
     - href: https://github.com/MariTere0212/MOD_8_Equipo_6-Accidentes-de-transito-y-mortalidad
       title: GitHub Datos de Dashboard
